@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Javascript - String Reversal</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function reverse(str) {
+				var rtnStr = "";
+    		if(!str || str.length < 2) 
+					console.log(str);
+				else {
+					for (var i=str.length-1; i>=0; i-- ) {
+						rtnStr = rtnStr + str[i];
+					}
+    			console.log(rtnStr);
+				}
+  		}
+			reverse("!");
+			reverse("Hello world!");
+		</script>
+	</body>
+</html>
